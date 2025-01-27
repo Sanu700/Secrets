@@ -1,0 +1,122 @@
+/* General Body Styling */
+body {
+  background-color: #f4f8fb; /* Soft off-white background for freshness */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Centered Content Styling */
+.centered {
+  text-align: center;
+  padding: 40px;
+  background: #fff; /* White background for a clean look */
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: 600px;
+  width: 90%;
+  margin-bottom: 20px;
+  border-top: 5px solid #56ccf2; /* Subtle blue accent */
+}
+
+/* Heading Styling */
+.centered h1 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  color: #333; /* Dark text for easy readability */
+  font-weight: 600;
+}
+
+/* Paragraph Styling */
+.centered p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #444; /* Slightly lighter color for the text */
+  line-height: 1.6;
+}
+
+/* Secret Text Styling */
+.secret-text {
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 20px auto;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #56ccf2; /* Soothing blue background */
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 6px 12px rgba(86, 204, 242, 0.3);
+  transition: all 0.3s ease;
+}
+
+.secret-text:hover {
+  background-color: #39a0d5; /* Slightly darker blue on hover */
+  transform: translateY(-4px);
+}
+
+/* Button Styling */
+button {
+  font-size: 1rem;
+  padding: 12px 30px;
+  background-color: #56ccf2; /* Blue background */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 8px rgba(86, 204, 242, 0.2);
+}
+
+button:hover {
+  background-color: #39a0d5; /* Hover effect with a darker shade */
+  transform: translateY(-3px);
+}
+
+/* Footer Styling */
+footer {
+  background-color: #56ccf2; /* Matching the color theme */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+footer a:hover {
+  color: #f7f7f7; /* Slight lightening on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .centered {
+    padding: 20px;
+  }
+  .centered h1 {
+    font-size: 2rem;
+  }
+  .secret-text {
+    font-size: 1.3rem;
+    padding: 15px 25px;
+  }
+  button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
