@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "footer.ejs", "use": "@vercel/static" },
+    { "src": "header.ejs", "use": "@vercel/static" },
+    { "src": "styles.css", "use": "@vercel/static" },
+    { "src": "secrets.ejs", "use": "@vercel/static" },
+    { "src": "submit.ejs", "use": "@vercel/static" },
+    { "src": "register.ejs", "use": "@vercel/static" },
+    { "src": "index.js", "use": "@vercel/static" },
+    { "src": "login.ejs", "use": "@vercel/static" },
+    { "src": "home.ejs", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/home.ejs" }
+  ]
+}
